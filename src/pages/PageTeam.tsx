@@ -19,7 +19,7 @@ export const PageTeam = () => {
 				<>
 					<p>We have {employees.length} team members to serve you:</p>
 					{employees.map((employee) => {
-						return <Employee employee={employee} />;
+						return <Employee employee={employee} key={employee.employeeID} />;
 					})}
 				</>
 			) : (

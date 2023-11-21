@@ -1,5 +1,5 @@
 export const PagePlanner = () => {
 	return (
-		<p>this is the planner page</p>
+		<p>Our planner page is coming soon!</p>
 	)
 }
