@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { PageDestinations } from "./pages/PageDestinations";
 import { PagePlanner } from "./pages/PagePlanner";
 import { PageTeam } from "./pages/PageTeam";
@@ -11,6 +11,7 @@ export const AppRouter = () => {
 			<Route path="/team" element={<PageTeam />}/>
 			<Route path="/destinations" element={<PageDestinations />}/>
 			<Route path="/planner" element={<PagePlanner />}/>
+			<Route index element={<Navigate to="/welcome" replace />}/>
 		</Routes>
 	);
 };
