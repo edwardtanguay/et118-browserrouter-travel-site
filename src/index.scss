@@ -2,8 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	a {
+		@apply underline;
+	}
+}
+
+nav a {
+	text-decoration: none;
+}
+
 a.active {
-	$shadowColor:rgb(36, 36, 233);
+	$shadowColor: rgb(36, 36, 233);
 	color: rgb(247, 255, 3);
 	font-weight: bold;
 	text-shadow: -2px 2px 2px $shadowColor, -2px -2px 2px $shadowColor, 2px 2px 2px $shadowColor, 2px -2px 2px $shadowColor;
